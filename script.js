@@ -1,3 +1,15 @@
+
+const imageContainer = document.getElementById('image-container');
+const loader = document.getElementById('loader');
+
+let photosArray = [];
+
+// Unsplash API
+const count = 20;
+const apiKey = 'Nn1AVB9M8iZsITW-Xg-9L4-PVtNSyQfTjYviIwixz8E';
+const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+
+
 // Create Elements for Links & Photos, Add to DOM
 function displayPhotos() {
     // Function for each Object in photosArray
@@ -16,16 +28,6 @@ function displayPhotos() {
         imageContainer.appendChild(item);
     });
 }
-
-const imageContainer = document.getElementById('image-container');
-const loader = document.getElementById('loader');
-
-let photosArray = [];
-
-// Unsplash API
-const count = 10;
-const apiKey = 'Nn1AVB9M8iZsITW-Xg-9L4-PVtNSyQfTjYviIwixz8E';
-const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
 //Get photos from Unsplash API
 async function getPhotos() {
