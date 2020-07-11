@@ -46,6 +46,6 @@ async function getPhotos() {
         // Catch error here
     }
 }
-
+console.log(displayPhotos);
 //On load
 getPhotos();
