@@ -80,3 +80,4 @@ window.addEventListener('scroll', () => {
 
 //On load
 getPhotos();
+console.log(getPhoto);
